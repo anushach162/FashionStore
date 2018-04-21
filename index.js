@@ -1,9 +1,18 @@
-// function add (x,y) { //ES5
-//     return x+y;
-// }
+/**
+ * Configuration for express
+ */
 
-// console.log(add("addme",6));
 
-module.exports = (request,response) => {
-    response.end('Helloooooo')
-};
+ //Dependencies
+ const express = require('express');
+
+ //Creating the express application
+ const app= express();
+
+ //sample HTTP GET call
+ app.get('/', (req,res)=> {
+        res.status(200).send('Helloo am from Express');
+ });
+
+ //Exporting the application
+ module.exports = app;
