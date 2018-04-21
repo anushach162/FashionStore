@@ -6,7 +6,7 @@
 const http = require('http');
 
 //Importing the application
-const index = require('./index');
+const index = require('./src/index');
 
 //Instantiating the server
 const server = http.createServer(index);
